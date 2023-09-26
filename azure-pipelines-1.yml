@@ -23,12 +23,12 @@ steps:
     
 -  task: Docker@2
     inputs:
-     containerResgistery: 'DockerService'
+     containerResgistery: 'azuredevops_08'
      command: 'login'
      
 -  task: Docker@2
   inputs:
-   containerRegistry:  'DockerService'
+   containerRegistry:  'azuredevops_08'
    repository:'divyanicku/azuredevops_08'
    command:'buildAndPush'
    Dockerfile: '**/AzureDockerfile'
