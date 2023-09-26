@@ -31,11 +31,11 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     
--  task:DockerService
+-  task: Docker@2
     inputs:
      containerResgistery: 'DockerService'
      command: 'login'
--  task:DockerService
+-  task: Docker@2
   inputs:
    containerRegistry:  'DockerService'
    repository:'divyanicku / azuredevops_08'
